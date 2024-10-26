@@ -14,7 +14,7 @@ export default {
         ...defaultTheme.screens,
       },
       fontFamily: {
-        sans: ['Oswald', 'Roboto', 'sans-serif'],
+        inter: ['Inter', 'Roboto', 'sans-serif'],
       },
       colors: {
         bodyBackground: '#f8f8f8',
