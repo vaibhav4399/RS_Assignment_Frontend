@@ -1,0 +1,53 @@
+.login_section {
+    @apply mx-auto max-w-[576px]  h-[614px] text-center mt-12 rounded-3xl px-6 md:px-14;
+
+    border: 1px solid #C1C1C1;
+
+    .login_title {
+        @apply text-3xl font-semibold my-6;
+    }
+
+    .login_msg {
+        @apply font-medium text-lg md:text-2xl;
+    }
+
+    .login_info {
+        @apply text-sm md:text-base font-normal;
+    }
+    
+
+    form {
+        @apply py-8 flex flex-col gap-8 max-sm:text-sm;
+        border-bottom: 1px solid #C1C1C1;
+
+        div {
+            @apply flex flex-col w-full items-start gap-2;
+
+            label {
+                @apply font-normal;
+            }
+
+            input {
+                @apply w-full py-2 rounded-md px-1;
+                border: 1px solid #C1C1C1;
+            }
+
+            input[id="password"] {
+                @apply pr-16;
+            }
+
+            button.password_toggle {
+                @apply underline absolute font-normal right-2 top-10;
+            }
+        }
+
+        button.submit {
+            @apply bg-black text-white rounded-md w-full py-3 md:py-4 font-medium;
+        }
+    }
+
+    .register_toggle {
+        @apply font-normal flex flex-col md:flex-row md:gap-2 mt-4 justify-center;
+        font-size: 16px;
+    }
+}
